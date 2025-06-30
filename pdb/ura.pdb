@@ -1,0 +1,33 @@
+REMARK  EXECUTING CHARMM SCRIPT FROM PYTHON                                           
+REMARK   DATE:     6/12/25     17:12:43      CREATED BY USER: raheelx                 
+ATOM      1  H5T URA     1       4.095   2.399   1.494  1.00  0.00      PROA
+ATOM      2  O5' URA     1       3.447   1.699   1.602  1.00  0.00      PROA
+ATOM      3  C5' URA     1       3.209   1.171   0.283  1.00  0.00      PROA
+ATOM      4  H5' URA     1       4.143   0.699  -0.089  1.00  0.00      PROA
+ATOM      5 H5'' URA     1       2.738   1.961  -0.341  1.00  0.00      PROA
+ATOM      6  C4' URA     1       2.188   0.054   0.380  1.00  0.00      PROA
+ATOM      7  H4' URA     1       2.514  -0.722   1.104  1.00  0.00      PROA
+ATOM      8  O4' URA     1       0.927   0.598   0.868  1.00  0.00      PROA
+ATOM      9  C1' URA     1       0.069  -0.086   0.221  1.00  0.00      PROA
+ATOM     10  H1' URA     1      -0.581  -0.437   1.051  1.00  0.00      PROA
+ATOM     11  N1  URA     1      -1.397   0.159   0.116  1.00  0.00      PROA
+ATOM     12  C6  URA     1      -1.919   1.044  -0.804  1.00  0.00      PROA
+ATOM     13  H6  URA     1      -1.183   1.540  -1.437  1.00  0.00      PROA
+ATOM     14  C2  URA     1      -2.210  -0.537   0.979  1.00  0.00      PROA
+ATOM     15  O2  URA     1      -1.787  -1.326   1.804  1.00  0.00      PROA
+ATOM     16  N3  URA     1      -3.551  -0.277   0.842  1.00  0.00      PROA
+ATOM     17  H3  URA     1      -4.185  -0.785   1.476  1.00  0.00      PROA
+ATOM     18  C4  URA     1      -4.143   0.594  -0.055  1.00  0.00      PROA
+ATOM     19  O4  URA     1      -5.363   0.726  -0.062  1.00  0.00      PROA
+ATOM     20  C5  URA     1      -3.231   1.281  -0.918  1.00  0.00      PROA
+ATOM     21  H5  URA     1      -3.602   1.988  -1.659  1.00  0.00      PROA
+ATOM     22  C2' URA     1       0.529  -1.215  -0.564  1.00  0.00      PROA
+ATOM     23 H2'' URA     1      -0.102  -1.356  -1.467  1.00  0.00      PROA
+ATOM     24  O2' URA     1       0.714  -2.355   0.265  1.00  0.00      PROA
+ATOM     25  H2' URA     1       0.016  -2.508   0.906  1.00  0.00      PROA
+ATOM     26  C3' URA     1       1.814  -0.630  -0.935  1.00  0.00      PROA
+ATOM     27  H3' URA     1       1.663   0.160  -1.702  1.00  0.00      PROA
+ATOM     28  O3' URA     1       2.776  -1.551  -1.431  1.00  0.00      PROA
+ATOM     29  H3T URA     1       2.412  -2.289  -1.926  1.00  0.00      PROA
+TER      30      URA      1
+END

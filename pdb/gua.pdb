@@ -1,0 +1,37 @@
+REMARK  EXECUTING CHARMM SCRIPT FROM PYTHON                                           
+REMARK   DATE:     6/12/25     17:12:43      CREATED BY USER: raheelx                 
+ATOM      1  H5T GUA     1       3.075  -2.797  -0.351  1.00  0.00      PROA
+ATOM      2  O5' GUA     1       2.675  -1.942  -0.174  1.00  0.00      PROA
+ATOM      3  C5' GUA     1       3.064  -1.089  -1.267  1.00  0.00      PROA
+ATOM      4  H5' GUA     1       2.611  -1.475  -2.204  1.00  0.00      PROA
+ATOM      5 H5'' GUA     1       4.166  -0.947  -1.238  1.00  0.00      PROA
+ATOM      6  C4' GUA     1       2.463   0.286  -1.051  1.00  0.00      PROA
+ATOM      7  H4' GUA     1       2.670   0.952  -1.917  1.00  0.00      PROA
+ATOM      8  O4' GUA     1       1.016   0.165  -0.936  1.00  0.00      PROA
+ATOM      9  C1' GUA     1       0.773   0.554   0.041  1.00  0.00      PROA
+ATOM     10  H1' GUA     1       0.430   1.567  -0.259  1.00  0.00      PROA
+ATOM     11  N9  GUA     1      -0.283  -0.465   0.302  1.00  0.00      PROA
+ATOM     12  C4  GUA     1      -1.636  -0.285   0.111  1.00  0.00      PROA
+ATOM     13  N2  GUA     1      -4.301   1.732  -0.850  1.00  0.00      PROA
+ATOM     14  H21 GUA     1      -5.306   1.750  -0.950  1.00  0.00      PROA
+ATOM     15  H22 GUA     1      -3.808   2.577  -1.101  1.00  0.00      PROA
+ATOM     16  N3  GUA     1      -2.233   0.844  -0.342  1.00  0.00      PROA
+ATOM     17  C2  GUA     1      -3.551   0.708  -0.418  1.00  0.00      PROA
+ATOM     18  N1  GUA     1      -4.226  -0.440  -0.076  1.00  0.00      PROA
+ATOM     19  H1  GUA     1      -5.251  -0.434  -0.175  1.00  0.00      PROA
+ATOM     20  C6  GUA     1      -3.627  -1.608   0.391  1.00  0.00      PROA
+ATOM     21  O6  GUA     1      -4.325  -2.592   0.673  1.00  0.00      PROA
+ATOM     22  C5  GUA     1      -2.223  -1.476   0.476  1.00  0.00      PROA
+ATOM     23  N7  GUA     1      -1.261  -2.392   0.890  1.00  0.00      PROA
+ATOM     24  C8  GUA     1      -0.133  -1.748   0.768  1.00  0.00      PROA
+ATOM     25  H8  GUA     1       0.847  -2.161   1.006  1.00  0.00      PROA
+ATOM     26  C2' GUA     1       1.759   0.655   1.099  1.00  0.00      PROA
+ATOM     27 H2'' GUA     1       1.940  -0.334   1.571  1.00  0.00      PROA
+ATOM     28  O2' GUA     1       1.442   1.727   1.976  1.00  0.00      PROA
+ATOM     29  H2' GUA     1       0.516   1.793   2.218  1.00  0.00      PROA
+ATOM     30  C3' GUA     1       2.878   1.008   0.230  1.00  0.00      PROA
+ATOM     31  H3' GUA     1       3.812   0.536   0.604  1.00  0.00      PROA
+ATOM     32  O3' GUA     1       3.115   2.403   0.088  1.00  0.00      PROA
+ATOM     33  H3T GUA     1       2.912   2.929   0.864  1.00  0.00      PROA
+TER      34      GUA      1
+END
