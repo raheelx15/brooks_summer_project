@@ -1,0 +1,6 @@
+preprocessing/alignment/mol2_aligned/riboflavin_1
+preprocessing/alignment/mol2_aligned/riboflavin_2
+preprocessing/alignment/mol2_aligned/riboflavin_3
+preprocessing/alignment/mol2_aligned/riboflavin_4
+preprocessing/alignment/mol2_aligned/riboflavin_5
+preprocessing/alignment/mol2_aligned/riboflavin_6

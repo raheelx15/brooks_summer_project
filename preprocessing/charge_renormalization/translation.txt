@@ -14,7 +14,7 @@ H32 H011
 O3 O012
 H44 H013
 
-SITE 1 site1_sub1 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_1)
+SITE 1 site1_sub1 (from preprocessing/alignment/mol2_aligned/riboflavin_1)
 C11 C014
 H28 H015
 C12 C016
@@ -50,7 +50,7 @@ H40 H045
 H41 H046
 H42 H047
 
-SITE 1 site1_sub2 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_2)
+SITE 1 site1_sub2 (from preprocessing/alignment/mol2_aligned/riboflavin_2)
 C11 C048
 H28 H049
 C12 C050
@@ -85,7 +85,7 @@ H40 H078
 H41 H079
 H42 H080
 
-SITE 1 site1_sub3 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_3)
+SITE 1 site1_sub3 (from preprocessing/alignment/mol2_aligned/riboflavin_3)
 C11 C081
 H28 H082
 C12 C083
@@ -120,7 +120,7 @@ H40 H111
 H41 H112
 H42 H113
 
-SITE 1 site1_sub4 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_4)
+SITE 1 site1_sub4 (from preprocessing/alignment/mol2_aligned/riboflavin_4)
 C11 C114
 H28 H115
 C12 C116
@@ -156,7 +156,7 @@ H40 H145
 H41 H146
 H42 H147
 
-SITE 1 site1_sub5 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_5)
+SITE 1 site1_sub5 (from preprocessing/alignment/mol2_aligned/riboflavin_5)
 C11 C148
 H28 H149
 C12 C150
@@ -190,7 +190,7 @@ H40 H177
 H41 H178
 H42 H179
 
-SITE 1 site1_sub6 (from /home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_6)
+SITE 1 site1_sub6 (from preprocessing/alignment/mol2_aligned/riboflavin_6)
 C11 C180
 H28 H181
 C12 C182

@@ -1,0 +1,13 @@
+read rtf card name preprocessing/charmm_setup/riboflavin_combined_patch/combined_patches.rtf
+read param card name preprocessing/cgenff_output/ligand_combined.prm
+read sequence pdb name preprocessing/charge_renormalization/large_lig.pdb
+read coor pdb name preprocessing/charge_renormalization/large_lig.pdb
+
+generate LIG setup
+ic param
+ic build
+
+write psf card name LIG.psf
+write coor pdb name LIG.pdb
+
+stop

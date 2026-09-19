@@ -1,6 +1,0 @@
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_1
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_2
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_3
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_4
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_5
-/home/raheelx/cphmd_walkthrough/mol2_aligned/riboflavin_6

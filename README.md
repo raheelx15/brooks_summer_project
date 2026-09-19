@@ -1,93 +1,72 @@
- Ligand Parameterization for Constant-pH Molecular Dynamics
+# Constant-pH MD Ligand Parameterization
 
-Research code and intermediate files from my 2025 work in the Charles L. Brooks III Lab at the University of Michigan, focused on preparing titratable small-molecule ligands for constant-pH molecular dynamics (CpHMD) with multisite λ-dynamics.
+Research code and preprocessing outputs from my 2025 work in the **Charles L. Brooks III Lab at the University of Michigan**, focused on preparing titratable small-molecule ligands for constant-pH molecular dynamics (CpHMD) with multisite λ-dynamics.
 
-Project overview
+## Project overview
 
-Ligand protonation can change with environment and can strongly affect molecular interactions and binding thermodynamics. This project focused on constructing and validating multistate ligand representations that could be used in CHARMM-based CpHMD workflows.
+Ligand protonation can change with environment and strongly influence conformation, protein–ligand interactions, and binding thermodynamics. This project focused on constructing and validating multistate ligand representations for CHARMM-based CpHMD and applying the workflow to riboflavin.
 
-This repository documents the parameterization workflow I developed and adapted for riboflavin, including molecular-state preprocessing, CGenFF parameter generation, structural alignment, maximum-common-substructure analysis, charge renormalization, CHARMM topology/parameter assembly, and validation of atom mappings across protonation states.
+The curated workflow is in [`notebooks/riboflavin_parameterization_workflow.ipynb`](notebooks/riboflavin_parameterization_workflow.ipynb).
 
-My contributions
+## My contributions
 
 My project-specific work included:
 
-Automating ligand preprocessing and CGenFF parameter-generation steps
+- automating ligand preprocessing and CGenFF parameter-generation steps;
+- aligning protonation states and preparing consistent MOL2/RTF/PRM inputs;
+- building validation checks for atom-name and atom-mapping consistency across states;
+- selecting reference states using ligand charge and CGenFF penalty information;
+- integrating charge-renormalized core/patch files into CHARMM-compatible topology and parameter files;
+- generating CHARMM build inputs and debugging parameterization/compatibility issues; and
+- running and analyzing the resulting CpHMD/ALF workflow on HPC resources.
 
-Aligning protonation states and preparing consistent MOL2/RTF/PRM inputs
+The underlying **multisite λ-dynamics, Adaptive Landscape Flattening (ALF), MCS, and charge-renormalization methodology/helper code** was developed by the Brooks Lab and collaborators. Lab-provided helper implementations used in this project are separated under [`scripts/brooks_lab/`](scripts/brooks_lab/) to make provenance explicit.
 
-Building validation checks for atom-name and atom-mapping consistency across states
+## Featured code sample
 
-Selecting reference states using ligand charge and CGenFF penalty information
+[`scripts/check_mol2_atom_consistency.py`](scripts/check_mol2_atom_consistency.py) is a validation utility I wrote after encountering difficult atom-mapping inconsistencies during ligand parameterization. It compares atom coordinates across aligned, state-specific MOL2 files and flags atom names whose mappings differ between states.
 
-Integrating charge-renormalized core/patch files into CHARMM-compatible topology and parameter files
+This automated a debugging step I had initially performed manually and helped catch subtle inconsistencies before they propagated into the larger simulation workflow.
 
-Generating CHARMM build inputs and debugging parameterization/compatibility issues
+## Repository structure
 
-Running and analyzing the resulting constant-pH molecular-dynamics workflow on HPC resources
+```text
+.
+├── notebooks/
+│   └── riboflavin_parameterization_workflow.ipynb
+├── scripts/
+│   ├── check_mol2_atom_consistency.py
+│   ├── combine_rtf_files.py
+│   └── brooks_lab/
+│       ├── msld_mcs.py
+│       └── msld_crn.py
+├── preprocessing/
+│   ├── input_data/
+│   ├── cgenff_output/
+│   ├── structure_conversion/
+│   ├── alignment/
+│   ├── mcs/
+│   ├── charge_renormalization/
+│   └── charmm_setup/
+└── reference/
+    ├── phenol/
+    └── pdb/
+```
 
-The underlying multisite λ-dynamics, Adaptive Landscape Flattening (ALF), MCS, and charge-renormalization methodology/helper code was developed by the Brooks Lab and collaborators. This repository is intended to highlight my project-specific preprocessing, validation, integration, and analysis work rather than claim authorship of the underlying simulation framework.
+## Main tools
 
-Featured code sample
+Python, RDKit, Open Babel, pandas/NumPy, CHARMM/pyCHARMM, CGenFF, multisite λ-dynamics, Adaptive Landscape Flattening, shell/HPC workflows.
 
-scripts/check_mol2_atom_consistency.py is a small validation utility I wrote after encountering difficult atom-mapping inconsistencies during ligand parameterization. It compares atom coordinates across state-specific MOL2 files and flags atom names that map to different coordinates.
+## Research output
 
-This automated a debugging step that I had previously performed manually and helped catch subtle inconsistencies before they propagated into the larger simulation workflow.
+This work contributed to the peer-reviewed Biophysical Society abstract:
 
-Workflow
-
-A simplified view of the ligand-preparation pipeline is:
-
-Generate candidate protonation states.
-
-Obtain CGenFF parameters for each state.
-
-Align ligand states into a common coordinate frame.
-
-Identify the common molecular core and state-specific substituents.
-
-Validate atom naming/mapping across states.
-
-Renormalize charges for a multisite λ-dynamics representation.
-
-Combine core/patch topology files and parameter files.
-
-Build the CHARMM ligand system for downstream CpHMD simulations.
-
-Main tools
-
-Python
-
-RDKit
-
-Open Babel
-
-NumPy / pandas
-
-CHARMM / pyCHARMM
-
-CGenFF
-
-Multisite λ-dynamics
-
-Adaptive Landscape Flattening (ALF)
-
-Bash / HPC workflows
-
-Repository contents
-
-The repository reflects a research workflow rather than a standalone software package. The main Jupyter notebook contains the evolving ligand-parameterization pipeline, while the molecular and parameter files document intermediate stages of the workflow.
-
-Some steps depend on software and Brooks Lab infrastructure that are not distributed as part of this repository, so the repository should be viewed primarily as a research code sample and workflow record, not a turnkey reproducible package.
-
-Research output
-
-This work contributed to a peer-reviewed Biophysical Society abstract on extending CpHMD to titratable ligands:
-
-DOI: https://doi.org/10.1016/j.bpj.2025.11.2197
+**Cherepanov, Sarwar, Brooks. “Making ligands titratable: Extending CpHMD with drug binding.”**
+*Biophysical Journal* (2026).
+**DOI:** https://doi.org/10.1016/j.bpj.2025.11.2197
 
 A full manuscript describing the methodology and results is in preparation.
 
-Acknowledgments
+## Repository note
 
-This work was conducted through the University of Michigan Biophysics Research Experience for Undergraduates in the Brooks Lab. I am grateful to the Brooks Lab for the simulation methodology, software infrastructure, and mentorship that supported this project.
+This repository reflects an academic research workflow rather than a standalone software package. Some steps depend on laboratory/HPC software that is not distributed here. Intermediate files are retained to document the actual preprocessing sequence used during the project.
