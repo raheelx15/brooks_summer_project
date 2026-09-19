@@ -1,6 +1,29 @@
-his
-__pycache__
-scripts_from_stan
-toppar
-*log
-*out
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*~
+
+# Logs / scheduler output
+*.log
+*.out
+*.err
+slurm-*.out
+
+# Large molecular-dynamics trajectories
+*.dcd
+*.xtc
+*.trr
+
+# Local environments / lab infrastructure
+.env
+.venv/
+venv/
+toppar/
+scripts_from_stan/
+his/
